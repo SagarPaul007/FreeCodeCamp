@@ -1,0 +1,110 @@
+:root {
+  --primary: rgb(238, 238, 238);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 100%;
+}
+
+.separate {
+  color: aliceblue;
+  margin: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+header {
+  padding: 50px 10px;
+  background-color: var(--primary);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%, 0 20%);
+}
+
+#title {
+  font-size: 50px;
+}
+
+header p {
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  border: 1px solid none;
+  border-radius: 8px;
+}
+#img-caption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#tribute-info {
+  background-color: var(--primary);
+  padding: 20px 20px 80px 20px;
+  clip-path: polygon(80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%, 0 0);
+}
+
+.tribute {
+  margin: auto;
+  max-width: 600px;
+}
+
+.tribute h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tribute ul {
+  margin: 10px;
+}
+.tribute ul li {
+  margin: 15px 0;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h4 {
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+#link {
+  padding: 100px 20px;
+  background-color: var(--primary);
+  text-align: center;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 100%, 0 100%, 0 50%);
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: rgb(248, 46, 80);
+}
+
+@media screen and (max-width: 900px) {
+  header,
+  #tribute-info,
+  #link {
+    clip-path: none;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #title {
+    font-size: 40px;
+  }
+}
